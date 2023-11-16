@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Index page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/Eproject.css">
+    <!-- for fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- aos -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm" id="myNav">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./images/blackLogo.png" height="60px" alt=""></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <div id="ul">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html" aria-current="page">Home <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">contact us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Insurance plans </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#travel"> <span class="fa fa-plane"
+                                        style="color: blue; font-size: 30px;"></span>&nbsp; Travel Insurance</a>
+                                <a class="dropdown-item" href="#health"><span class="fa fa-heartbeat"
+                                        style="color: blue; font-size: 30px;"></span>&nbsp; Health Insurance</a>
+                                <a class="dropdown-item" href="#car"><span class="fa fa-car"
+                                        style="color: blue; font-size: 30px;"></span>&nbsp; Car Insurance</a>
+                                <a class="dropdown-item" href="#house"><span class="fa fa-home"
+                                        style="color: blue; font-size: 30px;"></span>&nbsp; House Insurance</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <!-- search bar modal start-->
+                            <!-- Modal trigger button -->
+                            <button type="button" class="btn btn-light btn-lg ms-auto " style="margin-right: 10px;"
+                                data-bs-toggle="modal" data-bs-target="#searching">
+                                <span class="fa fa-search"></span>
+                            </button>
+
+                            <!-- Modal Body -->
+
+                            <div class="modal fade" id="searching" role="dialog">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalTitleId">here you can search insurance
+                                                plans</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <label for="name" class="form-label ">Search your plans</label>
+                                            <input type="text" class="form-control" id="searchplan" placeholder="enter plan name">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" onclick="newone()" class="btn btn-primary">search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Modal trigger button -->
+                <a href="sign.html" id="signup" class="btn btn-lg ms-auto">
+                    <span class="fa fa-user" style="color: rgb(255, 255, 255); font-size: 20px;">&nbsp; Account</span>
+                </a>
+
+
+
+               
+            </div>
+        </div>
+    </nav>
+    <!-- for carousel -->
+    <script>
+        
+        function newone() {
+    var myplan = document.getElementById('searchplan').value;
+
+    if (myplan.toLowerCase() === "health" || myplan.toLowerCase() === "health insurance") {
+        // Redirect to the Health Insurance section
+        window.location.href = "index.html#health";
+    } else if (myplan.toLowerCase() === "car" || myplan.toLowerCase() === "car insurance") {
+        // Redirect to the Car Insurance section
+        window.location.href = "index.html#car";
+    } else {
+        // Display an alert if the plan is not found
+        alert('Sorry! We do not have this plan');
+    }
+
+    // Close the modal
+    $('#searching').modal('hide');
+}
+  </script>
+    <div>
+
+
+
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div data-aos-anchor-placement="bottom-bottom" class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="./images/money.jpg" height="700px" class="w-100 d-block" alt="First slide">
+                    <!-- caption 1 -->
+                     <div class="carousel-caption text-dark">
+                        <h1>Affordable Coverage</h1>
+                        
+                     </div>
+                    <!-- ending of caption -->
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/happy.jpg" height="700px" class="w-100 d-block" alt="Second slide">
+                    <div class="carousel-caption text-dark">
+                        
+                        <h3><mark> Prioritize Your Well-Being</mark></h3>
+                    
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/air.jpg" height="700px" class="w-100 d-block" alt="Third slide">
+                    
+                    <div class="carousel-caption text-light">
+                        <h1>Your Journeys, Secured</h1>
+                        <h5>Comprehensive travel insurance plans for trip cancellations, medical emergencies, lost luggage, and more</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--    for section part start-->
+
+        <section id="companies" class="py-5">
+            <div class="container">
+                <h2>Featured Insurance Companies</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12" id="health" data-aos="flip-right">
+                        <div class="card mb-4">
+                           
+                                <span class="carrd-img-top" id="healthbg" ></span>
+                            <div class="card-body">
+                                <h5 class="card-title">Health Insurance</h5>
+                                <p class="card-text">Prioritize your well-being with comprehensive health insurance
+                                    plans. Coverage for medical expenses, doctor visits, prescriptions, and more.</p>
+                                <button class="btn btn-primary" id="health">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12" id="car" data-aos="flip-right">
+                        <div class="card mb-4">
+                            <span class="carrd-img-top" id="carbg" ></span>
+                                <div class="card-body">
+                                    <h5 class="card-title">Car Insurance</h5>
+                                    <p class="card-text">Stay covered on the road with comprehensive car insurance plans.
+                                        Coverage for accidents, damages, theft, and more..</p>
+                                    <button id="car1" class="btn btn-primary">Learn More</button>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12" id="travel" data-aos="flip-right">
+                        <div class="card mb-4">
+                            <span class="carrd-img-top" id="travelbg" ></span>
+                            <div class="card-body">
+                                <h5 class="card-title">Travel Insurance</h5>
+                                <p class="card-text">Secure your journeys with travel insurance plans. Coverage for trip
+                                    cancellations, medical emergencies, lost luggage, and more.</p>
+                                <button id="travel" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12" id="house" data-aos="flip-right">
+                        <div class="card mb-4">
+                            <span class="carrd-img-top" id="housebg" ></span>
+                          
+                            <div class="card-body">
+                                <h5 class="card-title">House indurance Insurance</h5>
+                                <p class="card-text">Protect your home sweet home with comprehensive homeowners
+                                    insurance plans. Coverage for damages, theft, liability, and more.</p>
+                                <button id="house" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of section -->
+        <!-- jQurey -->
+        <script src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("#car1").click(function () {
+                    alert("For your Car Insurance, create or sign in your account first!")
+                })
+            })
+            $(document).ready(function () {
+                $("#health").click(function () {
+                    alert("For your Health Insurance, create or sign in your account first!")
+                })
+            })
+            $(document).ready(function () {
+                $("#house").click(function () {
+                    alert("For your House Insurance, create or sign in your account first!")
+                })
+            })
+            $(document).ready(function () {
+                $("#travel").click(function () {
+                    alert("For your Travel Insurance, create or sign in your account first!")
+                })
+            })
+        </script>
+
+
+        <!-- for footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row" id="row">
+                    <div class="col-lg-4 col-md-12">
+                        <img src="./images/blackLogo.png" class="footer-logo" alt="" data-aos="flip-right">
+                        <h2 data-aos="flip-right">Shield Sure Assurance</h2>
+                        <p data-aos="flip-right">Protecting Your Tomorrows, Today.</p>
+ 
+
+
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <img src="./images/footerPlan.png" id="image-plan" alt="" data-aos="flip-right">
+                        <ul data-aos="flip-right">
+                            <h3>Insurance Plans</h3>
+                            <li>Health Insurance</li>
+                            <li>Car Insurance</li>
+                            <li>Travel Insurance</li>
+                            <li>Home Insurance</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <img src="./images/contuct us.png" id="image-contuct" alt="" data-aos="flip-right">
+                        <h3 data-aos="flip-right">Use Full links</h3>
+                        <!-- Replace the links with your actual social media links/icons -->
+                        <ul class="contuct" data-aos="flip-right">
+                            <a href="">
+                                <li class="fa fa-facebook" id="facebook">&nbsp; </li>_ShieldSure Assurance
+                            </a><br>
+                            <a href="">
+                                <li class="fa fa-linkedin" id="linkedin">&nbsp; </li>_ShieldSure Assurance
+                            </a><br>
+                            <a href="mailto:shieldsure2023@gmail.com">
+                                <li class="fa fa-envelope" id="email">&nbsp; </li>_shieldsure2023@gmail.com
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: rgb(230, 230, 233); height: 30px;">
+            <center>
+                <p>&copy; 2023 Shield Sure Assurance. All rights reserved.</p>
+            </center>
+        </div>
+
+        <!-- aos js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+
+        <!-- end of footer -->
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+            </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+            </script>
+</body>
+
+</html>

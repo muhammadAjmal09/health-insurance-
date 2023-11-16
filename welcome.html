@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/assignement.css">
+</head>
+<body>
+    <center>
+        <div class="genral">
+            <div class="left">
+                <h1>Welcome</h1>
+                <p class="para">hope you enjoy being with us <br> and learn as mutch as <br> you can! Enoy and learn <br> with us! </p>
+                
+            </div>
+            <div class="right">
+                <h2 id="welcome" style="text-align: right; padding-top: 300px; position: absolute; "></h2>
+                
+            </div>
+        </div></center>
+<script>
+    var name = localStorage.getItem("Name")
+    document.getElementById("welcome").innerHTML=("welcome dear user "+name)
+</script>
+</body>
+</html>

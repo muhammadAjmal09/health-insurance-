@@ -1,0 +1,168 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#myNav{
+    background-color: #0d6efd;
+    color:  #0d6efd;
+}
+
+
+#ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: black;
+    padding: 12px;
+}
+#ul li:hover{
+    background-color: #e9ecef;
+    border-radius: 20px;
+}
+#ul{
+    background-color: white;
+    border-radius: 20px;}
+    #ul{
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .footer{
+        background-color: rgb(31, 30, 30);
+        color: white;
+    }
+    .footer-logo{
+        height: 100px;
+        width: 150px;
+        
+        position: relative;
+    }
+    #image-plan{
+        height: 100px;
+        width: 150px;
+        
+        position: relative;
+    }
+    #image-contuct{
+        height: 100px;
+        width: 150px;
+        
+        position: relative;
+        border-radius: 10%;
+    }
+    .contuct a{
+        text-decoration: none;
+        color: white;
+    }
+    #facebook{
+        height: 30px;
+         width: 30px; 
+         background-color: blue;
+          color: white; 
+          font-size: 26px; 
+          text-align: center; 
+          border-radius: 10px;
+          padding-left: 7px;
+          padding-top: 7px;
+    }
+    #linkedin{
+        height: 30px;
+        width: 30px; 
+        background-color: rgb(41, 98, 206);
+         color: white; 
+         font-size: 26px; 
+         text-align: center; 
+         margin-top: 7px;
+         border-radius: 10px;
+         padding-left: 4px;
+          
+    }
+    #email{
+        height: 30px;
+        width: 30px; 
+        background-color: rgb(41, 98, 206);
+         color: white; 
+         font-size: 26px; 
+         text-align: center; 
+         margin-top: 7px;
+         border-radius: 10px;
+         padding-left: 4px;
+          
+    }
+    #carbg{
+        background-image: url(../images/crashed-car.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        transition: 0.8s linear;
+    }
+
+    #carbg:hover{
+        background-image: url(../images/car.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.8s linear;
+    }
+    #travelbg{
+        background-image: url(../images/travel.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+         transition: 0.8s linear;
+    }
+
+    #travelbg:hover{
+        background-image: url(../images/travel1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+         transition: 0.8s linear;
+    }
+    #housebg{
+        background-image: url(../images/house.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+         transition: 0.8s linear;
+        height: 400px;
+    }
+
+    #housebg:hover{
+        background-image: url(../images/house\ care.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+         transition: 0.8s linear;
+    }
+    #healthbg{
+        background-image: url(../images/healthins\ 1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+         transition: 0.8s linear;
+        height: 400px;
+    }
+
+    #healthbg:hover{
+        background-image: url(../images/Health-Insurance.jpg);
+        background-repeat: no-repeat;
+         transition: 0.8s linear;
+        background-size: cover;
+    }
+            /*sidebar Chat*/
+.chat_btn_wrap { position: fixed; right: -6px; z-index: 2; }
+.chat_btn_wrap a:hover { text-decoration: none!important; right: 0; }
+.chat_btn_wrap .chat_wrap { width: 385px; position: absolute; right: -323px; background: #1877F2; top: 255px; border-radius: 50px 0 0 50px; overflow: hidden; box-shadow: 0 0 40px #00000026!important; transition: all 0.3s ease; }
+.chat_btn_wrap .chat_wrap span { border-left: 1px solid #ded9d9; color: #fff; font-size: 18px; vertical-align: middle; background: #1877F2; padding: 17px 15px; }
+.btns_wrap .chat_wrap span.icoo, .chat_btn_wrap .chat_wrap span.icoo { color: #fff; font-size: 22px; padding: 10px 10px 10px 20px; vertical-align: middle; display: inline-block; border: none; }
+
+/*sidebar Chat
+
+/*sidebar num*/
+.btns_wrap { position: fixed; right: -6px; z-index: 2; }
+.btns_wrap a:hover { text-decoration: none!important; right: 0; }
+.btns_wrap .call_wrap { width: 280px; position: absolute; right: -218px; background: #3196d2; top: 330px; border-radius: 50px 0 0 50px; overflow: hidden; box-shadow: 0 0 40px #00000026!important; transition: all 0.3s ease; }
+.btns_wrap .call_wrap span { border-left: 0 solid #fff; color: #fff; font-size: 18px; vertical-align: middle; background: #3196d2; padding: 17px 15px; }
+.btns_wrap .call_wrap span.icoo, .btns_wrap .chat_wrap span.icoo { color: #fff; font-size: 22px; padding: 10px 22px 10px 20px; vertical-align: middle; display: inline-block; }
+
+/*sidebar num*/
+.useful-sec { padding: 120px 0 0 0; background: #13284a; color: #fff!important; }
+.useful-sec p { color: #fff!important; }
+
+#canvasB{
+    background-color: rgba(0, 0, rgb(13, 13, 167), 0.5);
+}

@@ -1,0 +1,40 @@
+*{
+    
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#body{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(2, 74, 230));
+    
+}
+#main-container{
+  
+}
+.MyMain{
+    width: 27%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 50px;
+ 
+
+}
+
+#login-btn{
+    
+    margin-left: -20px;
+
+}
+@media(max-width:650px){
+    *{
+        font-size: 13px;
+    
+    }
+    .MyMain{
+        width: 45%;
+    }
+    
+}
+#user:hover{
+    content: "I already have acount";}
+    #user::after:hover {content: " Important"; color: red;}

@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>travel insurance</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/Eproject.css">
+    <!-- for fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="myNav" class="navbar navbar-expand-sm ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./images/blackLogo.png" height="60px" alt=""></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <div id="ul">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="main.html"
+                            aria-current="page">Home <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us - 2.html">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us - 2.html">contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"
+                            id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Insurance
+                            plans </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="travel.html"> <span class="fa fa-plane"
+                                        style="color: blue; font-size: 30px;"></span>&nbsp; Travel Insurance</a>
+                                <a class="dropdown-item" href="health.html"><span class="fa fa-heartbeat"
+                                        style="color: blue; font-size: 30px;"></span>&nbsp; Health Insurance</a>
+                                <a class="dropdown-item" href="car.html"><span class="fa fa-car"
+                                        style="color: blue; font-size: 30px;"></span>&nbsp; Car Insurance</a>
+                                <a class="dropdown-item" href="house.html"><span class="fa fa-home"
+                                        style="color: blue; font-size: 30px;"></span>&nbsp; House Insurance</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <!-- search bar modal start-->
+                            <!-- Modal trigger button -->
+                            <button type="button" class="btn btn-light
+                                btn-lg ms-auto " style="margin-right: 10px;" data-bs-toggle="modal"
+                                data-bs-target="#searching">
+                                <span class="fa fa-search"></span>
+                            </button>
+
+                            <!-- Modal Body -->
+
+                            <div class="modal fade" id="searching" role="dialog">
+                                <div class="modal-dialog
+                                    modal-dialog-scrollable
+                                    modal-dialog-centered modal-sm" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalTitleId">here you
+                                                can search insurance
+                                                plans</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <label for="name" class="form-label ">Search
+                                                your plans</label>
+                                            <input type="text" class="form-control" id="searchplan" placeholder="enter plan
+                                                name">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn
+                                                btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" onclick="newone()">search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+              
+            </div>
+            <a href="index.html" id="signup" type="button" class="btn btn-lg ms-auto" >
+                <span class="fa fa-sign-in" style="color: rgb(255, 255, 255); font-size: 20px;">&nbsp; Sign out</span>
+            </a>
+
+        </div>
+    </nav>
+    
+    
+     <!-- SEARCHING SCRIPT -->
+     <script>
+        
+        function newone() {
+    var myplan = document.getElementById('searchplan').value;
+
+    if (myplan.toLowerCase() === "health" || myplan.toLowerCase() === "health insurance") {
+        // Redirect to the Health Insurance section
+        window.location.href = "health.html";
+    } else if (myplan.toLowerCase() === "car" || myplan.toLowerCase() === "car insurance" || myplan.toLowerCase() === "CAR" || myplan.toLowerCase() === "CAR INSURANCE") {
+        // Redirect to the Car Insurance section
+        window.location.href = "car.html";
+    } 
+    
+    else if (myplan.toLowerCase() === "house" || myplan.toLowerCase() === "house insurance" || myplan.toLowerCase() === "HOUSE INSURANCE") {
+        // Redirect to the Car Insurance section
+        window.location.href = "house.html";
+    }
+    else if (myplan.toLowerCase() === "travel" || myplan.toLowerCase() === "travel insurance" || myplan.toLowerCase() === "TRAVEL INSURANCE") {
+        // Redirect to the Car Insurance section
+        window.location.href = "travel.html";
+    }
+    
+    else {
+        // Display an alert if the plan is not found
+        alert('Sorry! We do not have this plan');
+    }
+
+    // Close the modal
+    $('#searching').modal('hide');
+}
+  </script>
+    <!-- END OF SEARCHING SCRIPT -->
+    
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <img src="./images/passport.jpg" height="300px" width="60%" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h1>What Is Travel Insurance, and What Does It Cover?
+                </h1>
+                <br>
+                <h6>Whether you missed your flight to Florida, lost your bags in Berlin, or broke your ankle in Ankara,
+                    travel insurance can help remedy all kinds of travel mishap costs. Travel insurance is a type of
+                    insurance covering financial losses associated with traveling, and it can be useful protection for
+                    domestic or international travel. </h6>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <img src="./images/travel png 2.jpg" height="300px" width="60%" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h1>What Is Travel Insurance?
+                </h1>
+                <br>
+                <h6>Travel insurance helps cover financial losses associated with surprise circumstances that could ruin
+                    a trip, including illness, injury, accidents, flight or other transportation delays, and other
+                    issues. This insurance costs 4%-10% of a trip's price. So, for a $10,000 trip, trip insurance could
+                    cost between $400 and $1,000.
+                    1
+                    <br>
+
+                    Premiums—or the price you pay for coverage—are based on the coverage type, your age, destination,
+                    trip's cost, and more. Specialized policy riders focus on the needs of business travelers, athletes,
+                    and
+                </h6>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <img src="./images/travel png 4.jpg" height="300px" width="60%" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h1>How Travel Insurance Works
+                </h1>
+                <br>
+                <h6>Travel insurance may be sold online by travel agents, travel suppliers (airlines, cruise lines),
+                    private insurance companies, or insurance brokers when booking your flight, accommodations, or car.
+                    include AIG Travel, Berkshire Hathaway Travel Protection, Generali Global Assistance, GeoBlue,
+                    Nationwide, and more.
+                    <br><br>
+                    Typically, you'll purchase coverage shortly after initial bookings for lodging, flights or other
+                    transportation, activities, and rental cars. Some policies may require you to do so to retain full
+                    coverage. Here are some terms to know for travel insurance.
+                </h6>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <img src="./images/travel png 7.jpg" height="300px" width="60%" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h1>How to Get Travel Insurance
+                </h1>
+                <br>
+                <h6>Travel insurance varies in cost, exclusions, and coverage. Coverage is available for single,
+                    multiple, and yearly trips. To get travel insurance, you fill out an insurance company's application
+                    about your trip, including the following:
+                    <br><br>
+                    <span class="text-danger"> (1)Travelers going
+                        <br>
+                        (2)Cost
+                        <br>
+                        (3)Destination
+                        <br>
+                        (4)Travel dates
+                        <br>
+                        (5)Date of first payment toward your trip
+                    </span>
+                    <br><br>
+                    The insurance company reviews the information using underwriting guidelines to guide issuing a
+                    policy and the rate. If it accepts your application, the company will issue a policy covering your
+                    trip. If the company rejects your application, you can apply with another insurer.
+                    [1]
+                    <br><br>
+
+                    When you receive your policy, you'll typically get a 10- to 15-day review period to review the
+                    contract's fine details. If you don't like the policy, you can return it for a refund. Read through
+                    the document and ensure the plan you purchased doesn't apply too many loopholes, and that it covers:
+                    [8]
+                    Washington State Office of the Insurance Commissioner. "Travel Insurance."
+                </h6>
+            </div>
+            
+        </div>
+         
+    
+    <!--the button to get the plan  -->
+
+    <button class="btn btn-primary mt-4 " type="button" data-bs-toggle="offcanvas" data-bs-target="#InsuarcanePlan"
+    aria-controls="Id1">Get it now</button>
+
+<div class="offcanvas offcanvas-start bg-primary" data-bs-scroll="true" tabindex="-1" id="InsuarcanePlan"
+    aria-labelledby="Enable both scrolling & backdrop">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-light" id="Enable both scrolling & backdrop">Fill up this form to inform us about your interest</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body rounded-3" id="canvasB">
+        <div class="container bg-dark text-light" id="canvas">
+        <label for="name">Full name</label>
+        <input type="text" class="form-control" placeholder="Write your name" required="Please enter your name">
+        <br>
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" placeholder="Write a valid email address" required="Please enter the email">
+        <br>
+        <label for="date">Date of birth</label>
+        <input type="date" class="form-control" required="confirm you DOB"><br>
+        <textarea name="messege" class="form-control pt-4" id="" cols="15" rows="5" placeholder="Write more about your self"></textarea>
+        <label for="term">Insurance Term</label>
+        <label class="container">Six months
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">one year
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Two year
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Five year
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <button class="btn btn-primary form-control mt-4">Submit</button><br><br>
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+    <!-- for footer -->
+    <div class="footer mt-5">
+        <div class="container">
+            <div class="row" id="row">
+                <div class="col-lg-4 col-md-12">
+                    <img src="./images/blackLogo.png" class="footer-logo" alt="" data-aos="flip-right">
+                    <h2 data-aos="flip-right">Shield Sure Assurance</h2>
+                    <p data-aos="flip-right">Protecting Your Tomorrows, Today.</p>
+
+
+
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <img src="./images/footerPlan.png" id="image-plan" alt="" data-aos="flip-right">
+                    <ul data-aos="flip-right">
+                        <h3>Insurance Plans</h3>
+                        <li>Health Insurance</li>
+                        <li>Car Insurance</li>
+                        <li>Travel Insurance</li>
+                        <li>Home Insurance</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <img src="./images/contuct us.png" id="image-contuct" alt="" data-aos="flip-right">
+                    <h3 data-aos="flip-right">Use Full links</h3>
+                    <!-- Replace the links with your actual social media links/icons -->
+                    <ul class="contuct" data-aos="flip-right">
+                        <a href="">
+                            <li class="fa fa-facebook" id="facebook">&nbsp; </li>_ShieldSure Assurance
+                        </a><br>
+                        <a href="">
+                            <li class="fa fa-linkedin" id="linkedin">&nbsp; </li>_ShieldSure Assurance
+                        </a><br>
+                        <a href="mailto:shieldsure2023@gmail.com">
+                            <li class="fa fa-envelope" id="email">&nbsp; </li>_shieldsure2023@gmail.com
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(230, 230, 233); height: 30px;">
+        <center>
+            <p>&copy; 2023 Shield Sure Assurance. All rights reserved.</p>
+        </center>
+    </div>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
